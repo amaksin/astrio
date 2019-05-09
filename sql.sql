@@ -1,6 +1,6 @@
-<?php
 
-//tables
+
+#tables
 CREATE TABLE `worker` (
 `id` int(11) NOT NULL AUTO_INCREMENT,
 `firstname` varchar(100) NOT NULL,
@@ -17,7 +17,7 @@ PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 
-//Выводит название отделов, в которых имеется 5 и более сотрудников
+#Выводит название отделов, в которых имеется 5 и более сотрудников
 SELECT name FROM `worker`
 JOIN department ON worker.department_id=department.id
 GROUP BY department_id
@@ -30,7 +30,7 @@ GROUP BY department_id;
 
 /*********************************************************/
 /*********************************************************/
-//хранение информации телефонного справочника
+#хранение информации телефонного справочника
 CREATE TABLE `people` (
     `id` int NOT NUll AUTO_INCREMENT,
     `name` varchar(100) NOT NULL,
